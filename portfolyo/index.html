@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css uzantısı -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- kit uzantısı -->
+    <script src="https://kit.fontawesome.com/adf8494542.js" crossorigin="anonymous"></script>
+
+    <!-- font uzantısı -->
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+ 
+    <div class="container">
+        <ul class="header">
+            <li>
+                <h1 class="logo">Anıl Küçükapdullahoğlu</h1>
+            </li>
+            <li>
+                <h1 class="logo">Front-end Developer</h1>
+            </li>
+        </ul>
+    </div>
+
+    <!--  giris -->
+
+    <div class="giris">
+        <div class="sol">
+            <h1 class="sol-h">Merhaba ben Anıl <i class="fa-regular fa-handshake"></i></h1>
+            <p class="sol-p1">Front-end developer olarak hayalindeki bir web sitesinin <br> ön yüzünü HTML, CSS ve JavaScript gibi teknolojileri <br> kullanarak hazırlıyorum.</p>
+            <p class="sol-p2">Hakkımda daha fazlasını öğrenmek ister misin ?</p> 
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
+        <div class="sağ">
+            <img class="hero"  src="img/hero.jpg" height="500vh"  alt="">
+        </div>
+    </div>
+
+    <!-- hakkımda -->
+
+    <div class="orta">
+        <div class="gorsel">
+            <img class="hero"  src="img/hakkımda.jpg" height="500vh"  alt="">
+        </div>
+        <div class="yazı">
+            <h1 class="yazı-h">Hakkımda</h1>
+            <p class="yazı-p1">Ben Anıl Küçükapdullahoğlu. İstanbul'da yaşıyorum.İstanbul <br> Gelişim Üniversitesi Yönetim Bilişim Sistemleri mezunuyum. <br> Sanat ve teknoloji arasındaki kesişimde ilerlemeyi seviyorum <br> ve her projeye yaratıcı bir yaklaşım getirmeye özen gösteriyorum. <br> İstenileni anlayıp en iyi şekilde hizmet sunmak benim önceliğimdir. <br>Ayrıca, takım çalışmasına değer veren ve sürekli öğrenmeye açık <br> biriyim. Her yeni proje, yeni bir öğrenme fırsatı olarak görüyorum. <br>Başarılarınızı ve ihtiyaçlarınızı karşılamak için buradayım. Benimle <br>iletişime geçmekten çekinmeyin ve birlikte yeni ve heyecan verici <br> projelerinizi hayata geçirelim! <br>Teşekkürler.</p>
+        </div>
+    </div>
+
+    <!-- portfolyo -->
+
+    <div class="port">
+        <div class="baslık">
+            <h3 class="baslık-h2">Portföy</h3>
+            <h1 class="baslık-h1">Çalışmalarım</h1>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider">
+              <div class="slide"><p class="slide-p">E-Ticaret Sitesi</p><button class="slide-button">Görüntüle</button></div>
+              <div class="slide"><p class="slide-p">Blog Sitesi</p><button class="slide-button">Görüntüle</button></div>
+              <div class="slide"><p class="slide-p">Eğitim Sitesi</p><button class="slide-button">Görüntüle</button></div>
+              <div class="slide"><p class="slide-p">Haber Sitesi</p><button class="slide-button">Görüntüle</button></div>
+            </div>
+            <div class="preview">
+              <div class="preview-item"><p class="item">1</p></div>
+              <div class="preview-item"><p class="item">2</p></div>
+              <div class="preview-item"><p class="item">3</p></div>
+              <div class="preview-item"><p class="item">4</p></div>
+            </div>
+          </div>
+    </div>
+
+    <!--  maliyet hesaplama ve form-->
+
+    <div class="maliyet">
+
+        <!-- maliyet -->
+
+        <h2 class="maliyet-h">PROJE MALİYETİNİ HESAPLAYALIM</h2>
+    <div class="makine">
+        <form id="form">
+            <label class="label" for="siteType">Site Türü:</label>
+            <select id="siteType" name="siteType">
+                <option value="onlineSatis">Online Satış Siteleri</option>
+                <option value="blog">Blog Siteleri</option>
+                <option value="haber">Haber Siteleri</option>
+                <option value="oyun">Oyun Siteleri</option>
+                <option value="tanitim">Tanıtım Siteleri</option>
+                <option value="kurumsal">Kurumsal Web Siteleri</option>
+                <option value="forum">Forum Siteleri</option>
+            </select>
+            <label class="label" for="deliveryTime">Teslim Süresi (Gün):</label>
+            <input type="number" id="deliveryTime" name="deliveryTime" min="5" max="14" value="5">
+            <label class="label" for="pageCount">Sayfa Sayısı:</label>
+            <input type="number" id="pageCount" name="pageCount" min="1" value="1">
+        </form>
+        <div class="fiyat" id="totalCost"></div>
+    </div>
+
+    <!-- form -->
+
+    <h2 class="maliyet-h">DETAYLAR İÇİN İLETİŞİME GEÇEBİLİRSİN</h2>
+    <div class="form">
+
+        <div class="form-column">
+        <input class="form-input" type="text" name="" placeholder="İsim ve Soyisminiz"> 
+        <input class="form-input" type="email" name="" placeholder="E-mail Adresiniz">
+        <textarea class="form-textarea" name="message" placeholder="" ></textarea>
+        <button type="submit" class="form-button">Mesaj Gönder</button>
+        </div>
+
+        <div class="adres">
+            <div class="mail"><i class="fa-regular fa-envelope"></i></div>
+            <div>
+                <p class="mail-p1">E-mail</p>
+                <p class="mail-p2">anilkerim0@gmail.com</p>
+                <div class="medya">
+                    <i class="instagram fa-brands fa-instagram"></i>
+                    <i class="x fa-brands fa-x-twitter"></i>
+                    <i class="facebook fa-brands fa-facebook"></i>
+                    <i class="linkledin fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- JavaScript uzantısı -->
+
+     <script src="script.js"></script>
+     
+</body>
+</html>

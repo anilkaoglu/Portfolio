@@ -1,0 +1,891 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar*/
+
+.container{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(53, 55, 75);
+}
+
+.header{
+    display: flex;
+    list-style-type: none;
+}
+
+.logo{
+    color: white;
+    margin-top: 25px;
+    margin-left: 250px;
+    font-family: "Roboto", sans-serif;  
+}
+
+/* giris */
+
+.giris{
+    height: 650px;
+    display: flex;
+    background-image: url(img/hero-bg.jpg);
+}
+
+.sol{
+    margin-left: 200px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    margin-top: 100px;
+}
+
+.sol-h{
+    font-size: 50px;
+}
+
+.sol-p1{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.sol-p2{
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.fa-solid{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.sağ{
+    margin-left: 200px;
+    margin-top: 70px;
+}
+
+.hero{
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 beige;
+}
+
+/* hakkımda */
+
+.orta{
+    height: 650px;
+    display: flex;
+    background-color: rgb(52, 73, 85);
+}
+
+.gorsel{
+    margin-left: 200px;
+    margin-top: 70px;
+}
+
+.yazı{
+    margin-left: 200px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    margin-top: 70px;
+}
+
+.yazı-h{
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+.yazı-p1{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+/* portfolyo */
+
+.port{
+    height: 500px;
+    background-color: rgb(80, 114, 123);
+}
+
+.baslık{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.baslık-h2{
+    color: orangered;
+    padding-top: 40px;
+}
+
+.baslık-h1{
+    color: white;
+}
+
+.slider-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .slider {
+    display: flex;
+    overflow-x: hidden;
+    margin-top: 30px;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    height: 250px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(204, 204, 204); 
+  }
+
+  .slide-p{
+    font-size: 25px;
+    margin-top: 30px;
+  }
+
+  .slide-button{
+    height: 40px;
+    width: 80px;
+    border-radius: 50px;
+    border: 0px ;
+    cursor: pointer;
+    margin-top: 50px;
+    transition: transform 0.3s ease;
+  }
+
+  .slide-button:hover{
+    transform: scale(1.2);
+  }
+  
+  .preview {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .preview-item {
+    width: 40px;
+    height: 40px;
+    background: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease;
+  }
+
+  .item{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .preview-item:hover{
+    transform: scale(1.2);
+  }
+  
+  .preview-item.active {
+    border-color: red;
+  }
+  
+
+
+/*  maliyet hesaplama ve form */
+
+
+.maliyet{
+    height: 850px;
+    background-color: rgb(53, 55, 75);
+}
+
+/* maliyet */
+
+.maliyet-h{
+    text-align: center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    padding-top: 50px;
+}
+
+.makine {
+    width: 700px;
+    margin: 0px auto;
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid rgb(52, 73, 85);
+    border-radius: 15px;
+    background-color: rgb(52, 73, 85);
+}
+
+.label {
+    margin-bottom: 10px;
+    display: block;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    font-family: "Roboto", sans-serif;
+    border-radius: 3px;
+}
+
+.fiyat{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+/* form */
+
+.form{
+    width: 700px;
+    border-radius: 15px;
+    background-color: rgb(52, 73, 85);
+    margin: 0px auto;
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+}
+
+.form-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+}
+
+.form-textarea{
+    width: 300px;
+    height: 80px;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+}
+
+.form-button{
+    width: 300px;
+    height: 30px;
+    background-color: orangered;
+    border: 1px solid orangered;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+}
+
+.form-button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+}
+
+.mail{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(112, 128, 210);
+    color: white;
+    margin-left: 50px;
+    margin-top: 30px;
+    display: grid;
+    place-items: center;
+}
+
+.adres{
+    display: flex;
+}
+
+.mail-p1{
+    color: white;
+    margin-left: 10px;
+    margin-top: 30px;
+    font-family: "Roboto", sans-serif;
+}
+
+.mail-p2{
+    color: rgb(171, 171, 171);
+    margin-left: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.medya{
+    margin-top: 40px;
+    font-size: 20px;
+    color: white; 
+    cursor: pointer;  
+    transition: transform 0.3s ease;
+}
+
+.instagram:hover{
+    color: gray;
+    transform: scale(1.3);
+}
+.x:hover{
+    color: gray;
+    transform: scale(1.3);
+}
+.facebook:hover{
+    color: gray;
+    transform: scale(1.3);
+}
+.linkledin:hover{
+    color: gray;
+    transform: scale(1.3);
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1370px){
+
+    .yazı-p1{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 1300px){
+
+    .sol{
+        margin-left: 150px;
+    }
+
+    .sağ{
+        margin-left: 150px;
+    }
+
+    .gorsel{
+        margin-left: 150px;
+    }
+
+    .yazı{
+        margin-left: 150px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+
+    .logo{
+        margin-left: 180px;
+    }
+
+    .sol{
+        margin-left: 100px;
+    }
+
+    .sağ{
+        margin-left: 100px;
+    }
+
+    .gorsel{
+        margin-left: 100px;
+    }
+
+    .yazı{
+        margin-left: 100px;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+
+    .logo{
+        margin-left: 140px;
+    }
+
+    .sol{
+        margin-left: 70px;
+    }
+
+    .sol-h{
+        font-size: 30px;
+    }
+
+    .sol-p1{
+        font-size: 18px;
+    }
+
+    .sol-p2{
+        font-size: 18px;
+    }
+
+    .fa-solid{
+        font-size: 20px;
+    }
+
+    .sağ{
+        margin-left: 70px;
+    }
+
+    .gorsel{
+        margin-left: 70px;
+    }
+
+    .yazı{
+        margin-left: 70px;
+    }
+
+    .yazı-h{
+        font-size: 30px;
+    }
+
+    .yazı-p1{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 945px){
+
+    .logo{
+        font-size: 25px;
+    }
+
+    .sol-h{
+        font-size: 20px;
+    }
+
+    .sol-p1{
+        font-size: 15px;
+    }
+
+    .sol-p2{
+        font-size: 15px;
+    }
+
+    .hero{
+        height: 300px;
+    }
+
+    .giris{
+        height: 450px;
+    }
+
+    .orta{
+        height: 450px;
+    }
+
+    .yazı-h{
+        margin-top: 0px;
+        font-size: 20px;
+    }
+
+    .yazı-p1{
+        font-size: 13px;
+    }
+
+    .baslık-h2{
+        font-size: 18px;
+    }
+    
+    .baslık-h1{
+        font-size: 19px;
+    }
+
+    .no1{
+        width: 600px;
+        height: 250px;
+    }
+
+    .no2{
+        width: 600px;
+        height: 250px;
+    }
+
+    .no3{
+        width: 600px;
+        height: 250px;
+    }
+
+    .port{
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 725px){
+
+    .logo{
+        font-size: 15px;
+    }
+
+    .container{
+        height: 70px;
+    }
+
+    .sol{
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+
+    .sağ{
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+
+    .hero{
+        height: 200px;
+    }
+
+    .giris{
+        height: 300px;
+    }
+
+    .gorsel{
+        margin-top: 50px;
+    }
+
+    .yazı-h{
+        font-size: 20px;
+        margin-top: -20px;
+    }
+
+    .yazı-p1{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+    .orta{
+        height: 300px;
+    }
+
+    .baslık-h2{
+        font-size: 15px;
+        padding-top: 10px;
+    }
+    
+    .baslık-h1{
+        font-size: 16px;
+    }
+
+    .no1{
+        width: 400px;
+        height: 150px;
+        margin-top: 15px;
+    }
+
+    .no2{
+        width: 400px;
+        height: 150px;
+        margin-top: 15px;
+    }
+
+    .no3{
+        width: 400px;
+        height: 150px;
+        margin-top: 15px;
+    }
+
+    .no-h{
+        margin-left: 40px;
+        padding-top: 50px;
+        font-size: 12px;
+    }
+
+    .no-button{
+        width: 60px;
+        height: 20px;
+        font-size: 8px;
+        margin-left: 40px;
+        margin-top: 5px;
+    }
+
+    .port{
+        height: 450px;
+    }
+
+    .maliyet-h{
+        padding-top: 15px;
+        font-size: 16px;
+    }
+
+    .makine {
+        width: 400px;
+        margin-top: 20px;
+    }
+
+    .form{
+        width: 400px;
+        margin-top: 20px;
+    }
+
+    .mail{
+        width: 20px;
+        height: 20px;
+        margin-left: 20px;
+        margin-top: 30px;
+        display: grid;
+        place-items: center;
+    }
+
+    .fa-regular{
+        font-size: 10px;
+    }
+
+    .mail-p1{
+        margin-left: 20px;
+        margin-top: 5px;
+        font-size: 8px;
+    }
+
+    .mail-p2{
+        margin-left: 20px;
+        font-size: 5px;
+    }
+
+    .adres{
+        display: block;
+    }
+
+    .medya{
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .x{
+        margin-top: 10px;
+    }
+
+    .facebook{
+        margin-top: 10px;
+    }
+
+    .linkledin{
+        margin-top: 10px;
+    }
+
+    .maliyet{
+        height: 730px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    .logo{
+        font-size: 12px;
+        margin-top: 15px;
+        margin-left: 100px;
+    }
+
+    .container{
+        height: 50px;
+    }
+
+    .sol{
+        margin-top: 20px;
+    }
+
+    .sağ{
+        margin-top: 20px;
+    }
+
+    .sol-h{
+        font-size: 15px;
+    }
+
+    .sol-p1{
+        font-size: 10px;
+    }
+
+    .sol-p2{
+        font-size: 10px;
+    }
+
+    .fa-solid{
+        font-size: 15px;
+    }
+
+    .hero{
+        height: 150px;
+    }
+
+    .giris{
+        height: 220px;
+    }
+
+    .gorsel{
+        margin-top: 20px;
+    }
+
+    .yazı-h{
+        font-size: 15px;
+        margin-top: -50px;
+    }
+
+    .yazı-p1{
+        font-size: 8px;
+        margin-top: 10px;
+    }
+
+    .orta{
+        height: 220px;
+    }
+}
+
+@media only screen and (max-width: 490px){
+
+    .logo{
+        font-size: 10px;
+        margin-top: 15px;
+        margin-left: 100px;
+    }
+
+    .sol{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .sağ{
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+
+    .gorsel{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .yazı-h{
+        font-size: 15px;
+        margin-top: -50px;
+        margin-left: -20px;
+    }
+
+    .yazı-p1{
+        font-size: 8px;
+        margin-top: 10px;
+        margin-left: -20px;
+    }
+    
+
+}
+
+@media only screen and (max-width: 420px){
+
+    .logo{
+        font-size: 10px;
+        margin-top: 18px;
+        margin-left: 70px;
+    }
+
+    .sol-p2{
+        margin-top: 20px;
+    }
+
+    .sağ{
+        margin-left: 10px;
+    }
+
+    .yazı-h{
+        font-size: 15px;
+        margin-left: -30px;
+    }
+
+    .yazı-p1{
+        font-size: 7px;
+        margin-left: -30px;
+    }
+}
+
+@media only screen and (max-width: 391px){
+
+    .no1{
+        width: 350px;
+        height: 150px;
+        margin-top: 15px;
+    }
+
+    .no2{
+        width: 350px;
+        height: 150px;
+        margin-top: 15px;
+    }
+
+    .no3{
+        width: 350px;
+        height: 150px;
+        margin-top: 15px;
+    }
+
+    .makine {
+        width: 350px;
+    }
+
+    .form{
+        width: 350px;
+    }
+
+    .mail{
+        margin-left: 5px;
+    }
+
+    .mail-p1{
+        margin-left: 5px;
+        font-size: 5px;
+    }
+
+    .mail-p2{
+        margin-left: 5px;
+        font-size: 2px;
+    }
+
+    .instagram{
+        margin-left: -15px;
+    }
+
+    .x{
+        margin-left: -15px;
+    }
+
+    .facebook{
+        margin-left: -15px;
+    }
+
+    .linkledin{
+        margin-left: -15px;
+    }
+}
+
+@media only screen and (max-width: 376px){
+
+    .yazı-p1{
+        font-size: 6px;
+    }
+}
+
+@media only screen and (max-width: 361px){
+
+    .yazı-p1{
+        font-size: 6px;
+    }
+
+    .sol-p2{
+        font-size: 9px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
